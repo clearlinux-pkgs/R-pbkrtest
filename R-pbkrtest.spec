@@ -4,7 +4,7 @@
 #
 Name     : R-pbkrtest
 Version  : 0.4
-Release  : 15
+Release  : 16
 URL      : http://cran.r-project.org/src/contrib/pbkrtest_0.4-2.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/pbkrtest_0.4-2.tar.gz
 Summary  : Parametric bootstrap and Kenward-Roger-based methods for mixed
