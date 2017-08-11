@@ -4,7 +4,7 @@
 #
 Name     : R-pbkrtest
 Version  : 0.4.7
-Release  : 38
+Release  : 39
 URL      : http://cran.r-project.org/src/contrib/pbkrtest_0.4-7.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/pbkrtest_0.4-7.tar.gz
 Summary  : Parametric Bootstrap and Kenward Roger Based Methods for Mixed
@@ -29,11 +29,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1502413666
+export SOURCE_DATE_EPOCH=1502416876
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1502413666
+export SOURCE_DATE_EPOCH=1502416876
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
