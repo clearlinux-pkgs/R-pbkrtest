@@ -4,10 +4,10 @@
 #
 Name     : R-pbkrtest
 Version  : 0.4.8.6
-Release  : 68
+Release  : 69
 URL      : https://cran.r-project.org/src/contrib/pbkrtest_0.4-8.6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/pbkrtest_0.4-8.6.tar.gz
-Summary  : Parametric Bootstrap and Kenward Roger Based Methods for Mixed Model Comparison
+Summary  : Parametric Bootstrap and Kenward Roger Based Methods for Mixed
 Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-lme4
@@ -18,26 +18,29 @@ BuildRequires : R-magrittr
 BuildRequires : buildreq-R
 
 %description
-# pbkrtest
-Parametric Bootstrap and Kenward Roger Based Methods for Mixed Model Comparison
+as implemented in the 'lme4' package. This package implements a parametric
+    bootstrap test and a Kenward Roger modification of F-tests for linear mixed
+    effects models and a parametric bootstrap test for generalized linear mixed
+    models.
 
 %prep
 %setup -q -c -n pbkrtest
+cd %{_builddir}/pbkrtest
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582303223
+export SOURCE_DATE_EPOCH=1589747240
 
 %install
-export SOURCE_DATE_EPOCH=1582303223
+export SOURCE_DATE_EPOCH=1589747240
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
