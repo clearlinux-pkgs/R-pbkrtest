@@ -7,7 +7,7 @@
 #
 Name     : R-pbkrtest
 Version  : 0.5.3
-Release  : 96
+Release  : 97
 URL      : https://cran.r-project.org/src/contrib/pbkrtest_0.5.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/pbkrtest_0.5.3.tar.gz
 Summary  : Parametric Bootstrap, Kenward-Roger and Satterthwaite Based
